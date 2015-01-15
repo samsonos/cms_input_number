@@ -1,7 +1,7 @@
 {
-    "name":"samsonos/cms_input_date",
-    "description":"SamsonCMS Date input field module",
-    "author":"Vitaly Iegorov <egorov@samsonos.com>",
+    "name":"samsonos/cms_input_number",
+    "description":"SamsonCMS Number input field module",
+    "author":"Max Omelchenko <omelchenko@samsonos.com>",
     "require":{
         "samsonos/cms_input":"*"
     },

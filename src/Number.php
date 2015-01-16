@@ -6,11 +6,13 @@ namespace samson\cms\input;
  * @author Vitaly Iegorov<egorov@samsonos.com>
  *
  */
-class Date extends Field 
+class Number extends Field
 {
+    public $cssclass = '__number';
+
     public function numericValue($input)
     {
         // Convert to timestamp
-        return strtotime($input);
+        return (double)$input;
     }
 }

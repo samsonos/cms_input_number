@@ -45,23 +45,7 @@ var SamsonCMS_InputNumber = function(fields) {
         }
         return false;
     });
-
-    function getCursorPosition(obj) {
-        var domElement = obj.DOMElement;
-        if (domElement.selectionStart) {
-            return domElement.selectionStart;
-        } else {
-            if (document.selection) {
-                var sel = document.selection.createRange();
-                var clone = sel.duplicate();
-                sel.collapse(true);
-                clone.moveToElementText(domElement);
-                clone.setEndPoint('EndToEnd', sel);
-                return clone.text.length;
-            }
-        }
-        return 0;
-    }
 };
 
-s('.__inputfield.__number').pageInit(SamsonCMS_InputNumber);
+// Bind input
+SamsonCMS_Input.bind(SamsonCMS_InputNumber, '.__inputfield.__number');

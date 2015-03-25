@@ -1,5 +1,7 @@
 <?php
-namespace samson\cms\input;
+namespace samsoncms\input\number;
+
+use samsoncms\input\Field;
 
 /**
  * Generic SamsonCMS input field
@@ -8,7 +10,14 @@ namespace samson\cms\input;
  */
 class Number extends Field
 {
-    public $cssclass = '__number';
+    /** @var  int Field type identifier */
+    protected static $type = 7;
+
+    /** @var string Module identifier */
+    protected $id = 'samson_cms_input_number';
+
+    /** @var string Special CSS classname for nested field objects to bind JS and CSS */
+    public $cssClass = '__number';
 
     public function numericValue($input)
     {

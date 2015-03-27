@@ -3,7 +3,7 @@
  */
 var SamsonCMS_InputNumber = function(fields) {
     // Create Number field instance with save handler
-    SamsonCMS_InputField(fields);
+    SamsonCMS_InputText(fields);
 
 
     var notAvailable = [];

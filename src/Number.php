@@ -19,7 +19,7 @@ class Number extends Field
     /** @var string Special CSS classname for nested field objects to bind JS and CSS */
     public $cssClass = '__number';
 
-    public function numericValue($input)
+    public function convert($input)
     {
         // Convert to timestamp
         return (double)$input;

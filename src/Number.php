@@ -10,11 +10,11 @@ use samsoncms\input\Field;
  */
 class Number extends Field
 {
-    /** @var  int Field type identifier */
-    protected static $type = 7;
-
-    /** @var string Module identifier */
-    protected $id = 'samson_cms_input_number';
+//    /** @var  int Field type identifier */
+//    protected static $type = 7;
+//
+//    /** @var string Module identifier */
+//    protected $id = 'samson_cms_input_number';
 
     /** @var string Special CSS classname for nested field objects to bind JS and CSS */
     public $cssClass = '__number';

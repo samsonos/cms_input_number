@@ -4,24 +4,24 @@ namespace samsoncms\input\number;
 use samsoncms\input\Field;
 
 /**
- * Generic SamsonCMS input field
- * @author Vitaly Iegorov<egorov@samsonos.com>
- *
+ * Number SamsonCMS input field
+ * @author Vitaly Iegorov <egorov@samsonos.com>
+ * @author Maxim Omelchenko <omelchenko@samsonos.com>
  */
 class Number extends Field
 {
-//    /** @var  int Field type identifier */
-//    protected static $type = 7;
-//
-//    /** @var string Module identifier */
-//    protected $id = 'samson_cms_input_number';
-
     /** @var string Special CSS classname for nested field objects to bind JS and CSS */
     public $cssClass = '__number';
 
-    public function convert($input)
+    /**
+     * Function to convert field value before save
+     *
+     * @param mixed $value Value to convert
+     * @return float|int Converted value
+     */
+    public function convert($value)
     {
         // Convert to timestamp
-        return (double)$input;
+        return (double)$value;
     }
 }

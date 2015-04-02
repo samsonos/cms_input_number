@@ -1,3 +1,2 @@
-<input type="hidden" class="__hidden" value="<?php iv('field_value')?>">
-<input type="number" class="__input" style="display:none" value="<?php iv('field_value')?>">
-<!--id="<?php /*iv('field_textarea_id')*/?>" -->
+<input type="hidden" class="__hidden" value="<?php iv('value')?>">
+<input type="number" class="__input" id="<?php iv('fieldId')?>" style="display:none" value="<?php iv('value')?>">
